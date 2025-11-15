@@ -50,6 +50,10 @@
         animation: slideDown 0.8s ease-out;
       }
 
+      .break-mobile {
+        display: inline;
+      }
+
       .subtitle {
         font-size: 1.95rem;
         color: #f5f5dc;
@@ -221,6 +225,11 @@
       @media (max-width: 480px) {
         h1 {
           font-size: 1.5rem;
+          padding: 0 0.5rem;
+        }
+
+        .break-mobile {
+          display: block;
         }
 
         .subtitle {
@@ -232,7 +241,7 @@
         }
 
         .container {
-          padding: 1rem;
+          padding: 0.5rem;
         }
 
         .services-list {
@@ -255,8 +264,8 @@
   <body>
     <div class="container">
       <img src="./images/logo-brown.jpeg" alt="Oca Short Stays Logo" class="logo" />
-      <h1>Deixe a Maré de clientes chegar. A Oca recebe por você.</h1>
-      <p class="subtitle">Transforme seu imóvel em renda extra sem dor de cabeça</p>
+      <h1>Deixe a Maré de clientes chegar. <span class="break-mobile">A Oca recebe por você.</span></h1>
+      <p class="subtitle">Transforme seu imóvel em renda <span class="break-mobile">extra sem dor de cabeça</span></p>
 
       <div class="services-list">
         <ul>
